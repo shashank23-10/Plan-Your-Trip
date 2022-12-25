@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Import CSS-->
+    <link rel="stylesheet" href="style.css" />
+    <!--Importing Font Awesome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="icon"
+      href="img/plan_your_trip_logo-removebg-preview.png"
+      type="image/icon type"
+    />
+    <title>Plan Your Trip</title>
+  </head>
+
+  <body>
+    <div class="top-bar">
+      <img class="logo" src="img/plan_your_trip_logo-removebg-preview.png" />
+      <a class="link-home" href="index.html" target="blank">Plan Your Trip</a>
+      <form>
+        <select>
+          <option>Locations</option>
+          <optgroup label="Asia">
+            <option>Japan</option>
+            <option>South Korea</option>
+            <option>Thailand</option>
+            <option>Indonesia</option>
+          </optgroup>
+          <optgroup label="North America">
+            <option>Canada</option>
+            <option">Mexico</option>
+          </optgroup>
+        </select>
+      </form>
+      <a class="links" href="plans.html" target="blank">Plans</a>
+      <a class="links" href="" target="blank">Contact</a>
+      <a class="links" href="" target="blank">Login</a>
+      <button class="signup"><a>Sign Up</a></button>
+    </div>
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <img src="img/slideshow1.jpg">
+    </div>
+    <div class="mySlides fade">
+      <img src="img/slideshow2.jpg">
+    </div>
+    <div class="mySlides fade">
+      <img src="img/slideshow3.jpg">
+    </div>
+    <div class="mySlides fade">
+      <img src="img/slideshow4.jpg">
+    </div>
+    <div class="mySlides fade">
+      <img src="img/slideshow5.jpg">
+    </div>
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+      <span class="dot" onclick="currentSlide(5)"></span>
+    </div>
+    <div class="content-section">
+      <div class="heading">
+        <h2>Benefits of Travelling with Us</h2>
+      </div>
+      <div class="benefits">
+        <div class="documents">
+          <img src="img/documents.png" />
+          <h4>Visa</h4>
+          <p>
+            We provide Visa Assistance to you, so that you can easily avail your
+            required documents
+          </p>
+        </div>
+        <div class="city-tour">
+          <img src="img/car-solid.svg" />
+          <h4>Transfers</h4>
+          <p>
+            Transfer from your home to the airport, so you don't have to use
+            your car for this and have to leave in paid parking
+          </p>
+        </div>
+        <div class="tickets">
+          <img src="img/tickets.png" />
+          <h4>Flight Tickets</h4>
+          <p>Assistance in all stages: from purchase to withdrawal</p>
+        </div>
+        <div class="city-tour">
+          <img src="img/map-location-solid.svg" />
+          <h4>City Tour</h4>
+          <p>Free sight-seeing to all the tourist spots</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-up">
+      <div class="quicklinks">
+        <h2>Quick Links</h2>
+        <h4>About Us</h4>
+        <h4>Terms and Conditions</h4>
+        <h4>Privacy Policy</h4>
+        <h4>Help</h4>
+      </div>
+      <div class="locations">
+        <h2>Locations</h2>
+        <h4>Japan</h4>
+        <h4>Indonesia</h4>
+        <h4>South Korea</h4>
+        <h4>Thailand</h4>
+      </div>
+      <div class="contact-us">
+        <h2>Contact Us</h2>
+        <p>contact@planyourtrip.com</p>
+        <p>+91 98321-07255</p>
+        <p>Monday-Friday - 8am to 6pm</p>
+        <p>Saturday - 9am to 1pm</p>
+      </div>
+      <div class="follow-us">
+        <h2>Follow Us</h2>
+        <h4>Instagram</h4>
+        <h4>Linkedin</h4>
+      </div>
+    </div>
+    <div class="footer-down">
+      <div class="copyright">
+        <h2>Plan Your Trip © 2022. All rights reserved.</h2>
+      </div>
+    </div>
+    <script src="myScript.js"></script>
+  </body>
+</html>
