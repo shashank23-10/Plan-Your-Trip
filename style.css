@@ -246,7 +246,7 @@ a {
   padding-top: 2rem;
   font-size: large;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   text-align: center;
   color: var(--color-white);
 }
@@ -294,6 +294,13 @@ a {
   z-index: -1;
   filter: brightness(1.25);
 }
+.contents .hover-items h3 {
+  color: var(--color-grey-1);
+}
+.contents .hover-items p {
+  color: var(--color-grey-2);
+  font-size: 0.5rem;
+}
 /*high-demand*/
 
 .high-demand {
@@ -331,8 +338,8 @@ a {
   color: var(--color-secondary);
 }
 
-.high-demand p {
-  color: var(--color-grey-2);
+.high-demand h3 {
+  color: var(--color-grey-1);
 }
 
 /*THENES*/
@@ -367,8 +374,8 @@ a {
   color: var(--color-secondary);
 }
 
-.themes p {
-  color: var(--color-grey-2);
+.themes h3 {
+  color: var(--color-grey-1);
 }
 
 /*Reviews*/
@@ -410,6 +417,10 @@ a {
 }
 .footer-up .follow-us ul {
   display: flex;
+  color: var(--color-grey-1);
+}
+.footer-up .follow-us ul a {
+  font-size: 1.1rem;
   color: var(--color-grey-1);
 }
 
