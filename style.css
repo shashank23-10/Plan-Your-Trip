@@ -192,21 +192,61 @@ a {
   pointer-events: none;
 }
 
+/*SEARCH*/
+.search-bar {
+  padding: 1rem;
+  background-color: var(--color-primary);
+  text-align: center;
+}
+.search-bar .heading {
+  text-align: center;
+  font-size: 1.8rem;
+  color: var(--color-secondary);
+}
+.search-bar .heading p {
+  font-size: 1.9rem;
+}
+.search-bar .search {
+  padding: 2rem;
+  padding-left: 10rem;
+  display: flex;
+}
+.search-bar .search input {
+  font-size: 2rem;
+}
+.search-bar .search select {
+  font-size: 2.2rem;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+.search-bar .submit {
+  font-size: 1.8rem;
+  border-radius: 10px;
+  padding: 0.4rem 1rem;
+  background-color: var(--color-secondary);
+  color: var(--color-primary);
+  cursor: pointer;
+}
+.search-bar .submit:hover {
+  background-color: var(--color-hover);
+  color: var(--color-primary);
+}
 /*content-section*/
 .content-section {
   padding: 1rem;
+  padding-top: -1rem;
   background-color: var(--color-primary);
 }
 .content-section .heading {
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: var(--color-secondary);
 }
 .content-section .benefits {
   padding-top: 2rem;
   font-size: large;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   text-align: center;
   color: var(--color-white);
 }
@@ -219,11 +259,41 @@ a {
 }
 .content-section .benefits p {
   padding: 0rem 5rem;
-  font-size: 1.2rem;
+  font-size: 0.8rem;
   padding-bottom: 1rem;
   color: var(--color-grey-2);
 }
 
+/*Explore Packages*/
+.explore {
+  background-color: var(--color-primary);
+  padding: 1rem 2rem;
+}
+.explore .heading {
+  font-size: 1rem;
+  color: var(--color-secondary);
+}
+.contents {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  padding-top: 1rem;
+  padding-left: 1rem;
+}
+.contents img {
+  width: 8rem;
+  height: 12rem;
+  border-radius: 5%;
+  transition: all 0.4s ease-in-out;
+  filter: brightness(1);
+}
+.contents img:hover {
+  width: 8.5rem;
+  height: 12.5rem;
+  border-radius: 5%;
+  cursor: pointer;
+  z-index: -1;
+  filter: brightness(1.25);
+}
 /*high-demand*/
 
 .high-demand {
