@@ -36,11 +36,34 @@
   --color-grey-5: #2a2e35;
   --color-grey-6: #12181b;
 }
-a {
-  text-decoration: none;
-}
 
-/*Top-Bar*/
+::-webkit-scrollbar {
+  width: 0;
+}
+#scroll-path {
+  position: fixed;
+  top: 10%;
+  right: 0;
+  width: 0.5rem;
+  background: var(--color-primary);
+}
+#progress-bar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 0.5rem;
+  background: var(--color-secondary);
+  animation: animate 5s linear;
+}
+@keyframes animate {
+  0%,
+  100% {
+    filter: hue-rotate(0deg);
+  }
+  50% {
+    filter: hue-rotate(360deg);
+  }
+}
 .top-bar {
   display: flex;
   background-color: var(--color-primary);
