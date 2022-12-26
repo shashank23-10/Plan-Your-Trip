@@ -159,14 +159,68 @@ a {
   font-size: 1.2rem;
   padding-bottom: 1rem;
 }
+
+/*high-demand*/
+
+.high-demand {
+  background-color: red;
+  padding: 1.5rem;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.high-demand .row1,
+.row2 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding-top: 1rem;
+  padding-left: 1rem;
+}
+
+.high-demand img {
+  width: 14rem;
+  height: 9rem;
+  border-radius: 5%;
+  transition: all 0.4s ease-in-out;
+  filter: brightness(1);
+}
+
+.high-demand img:hover {
+  width: 15rem;
+  height: 9.5rem;
+  border-radius: 5%;
+  cursor: pointer;
+  z-index: -1;
+  filter: brightness(1.15);
+}
+
+/*Reviews*/
+
+.reviews {
+  background-color: red;
+  padding: 1.5rem;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+/*Newsletter*/
+.newsletter {
+  background-color: red;
+  padding: 1.5rem;
+  margin-top: 1rem;
+  text-align: center;
+}
+
 /*footer-up*/
 .footer-up {
-  text-align: center;
   margin-top: 1rem;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   background-color: red;
   padding: 1.5rem;
+}
+.footer-up .follow-us ul {
+  display: flex;
 }
 
 /*footer-down*/
