@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
   list-style: none;
 }
 :root {
@@ -131,6 +132,20 @@ a {
   }
 }
 
+/*DARK MODE BUTTON*/
+.dark-mode-button {
+  position: fixed;
+  top: 88%;
+  left: 93%;
+  z-index: 1;
+}
+.dark-mode-button button {
+  border-radius: 50%;
+  padding: 0.5rem;
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+
 /*content-section*/
 .content-section {
   margin-top: 1rem;
@@ -202,7 +217,20 @@ a {
   margin-top: 1rem;
   text-align: center;
 }
-
+.box-area {
+  padding: 2rem;
+  position: relative;
+  z-index: -2;
+  display: block;
+  background: #fff;
+  color: #0000;
+  box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
+}
+.box-area h5 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: red;
+}
 /*Newsletter*/
 .newsletter {
   background-color: red;
