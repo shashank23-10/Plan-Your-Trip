@@ -83,19 +83,24 @@ a {
   z-index: 1;
 }
 .top-bar .link-home {
-  margin-top: 1rem;
-  margin-right: 8.5rem;
   font-size: 1.5rem;
   color: var(--color-secondary);
-  font-family: "Playfair Display", serif;
+  margin: 0.7rem 8.5rem 0.7rem 0rem;
+  border: 0.1rem solid var(--color-white);
+  border-radius: 1rem;
+  padding: 0.3rem 0.75rem;
+  text-transform: uppercase;
+  font-weight: 800;
 }
-.top-bar .logo {
-  height: 3.5rem;
+.top-bar .link-home:hover {
+  color: var(--color-white);
+  border: 0.1rem solid var(--color-secondary);
+  transition-delay: 0.3s;
 }
 .top-bar .links {
-  margin-top: 1rem;
+  margin: 1rem 0rem 1rem 0rem;
   color: var(--color-secondary);
-  padding-left: 1rem;
+  margin-left: 1rem;
   font-size: 1.5rem;
 }
 .top-bar .links:hover {
@@ -149,12 +154,13 @@ a {
   background: var(--color-secondary);
   color: #fff;
   padding: 0.8rem 3rem;
-  border: 0.2rem solid var(--color-primary);
+  border: 0.2rem solid transparent;
   cursor: pointer;
   font-size: 1.7rem;
 }
 .slideshow-container .content .btn:hover {
   background: transparent;
+  border: 0.2rem solid var(--color-primary);
   color: #fff;
   transition-delay: 0.15s;
 }
@@ -280,7 +286,7 @@ a {
 }
 .search-bar .search {
   padding: 2rem;
-  padding-left: 10rem;
+  padding-left: 8rem;
   display: flex;
 }
 .search-bar .search input {
@@ -292,19 +298,23 @@ a {
   padding: 0.5rem 1rem 0.5rem 1rem;
   background-color: var(--color-primary);
   color: var(--color-white);
+  cursor: pointer;
 }
+
 .search-bar .submit {
   font-size: 1.8rem;
   border-radius: 0.625rem;
   padding: 0.4rem 1rem;
   background-color: var(--color-secondary);
   color: var(--color-primary);
+  border: transparent;
   cursor: pointer;
 }
 .search-bar .submit:hover {
   background-color: transparent;
   color: var(--color-secondary);
   transition-delay: 0.15s;
+  border: 0.1rem solid var(--color-secondary);
 }
 /*content-section*/
 .content-section {
@@ -405,6 +415,22 @@ a {
   color: var(--color-grey-2);
   font-size: 0.75rem;
 }
+.contents .explore-buttons button {
+  display: inline;
+  margin-top: 0.15rem;
+  background: var(--color-secondary);
+  color: var(--color-primary);
+  padding: 0.5rem 1rem;
+  border: 0.2rem solid var(--color-primary);
+  cursor: pointer;
+  font-size: 0.75rem;
+}
+.contents .explore-buttons button:hover {
+  background: transparent;
+  color: var(--color-secondary);
+  transition-delay: 0.15s;
+  border: 0.1rem solid var(--color-secondary);
+}
 /*high-demand*/
 .high-demand {
   background-color: var(--color-primary);
@@ -454,11 +480,13 @@ a {
   padding: 0.4rem 1rem;
   background-color: var(--color-secondary);
   color: var(--color-primary);
+  border: 0.2rem solid var(--color-primary);
   cursor: pointer;
 }
 .high-demand button:hover {
   background-color: transparent;
   color: var(--color-secondary);
+  border: 0.1rem solid var(--color-secondary);
   transition-delay: 0.15s;
 }
 /*THEMES*/
@@ -502,12 +530,14 @@ a {
   margin-top: 0.1rem;
   background-color: var(--color-secondary);
   color: var(--color-primary);
+  border: 0.2rem solid var(--color-primary);
   cursor: pointer;
 }
 .themes .col button:hover {
   background-color: transparent;
   color: var(--color-secondary);
   transition-delay: 0.15s;
+  border: 0.1rem solid var(--color-secondary);
 }
 
 /*Reviews*/
@@ -646,6 +676,7 @@ a {
   padding: 0.5rem 1rem;
   font-size: 2rem;
   background-color: var(--color-secondary);
+  border: transparent;
   cursor: pointer;
   border-radius: 10rem;
 }
@@ -653,6 +684,7 @@ a {
   background-color: transparent;
   color: var(--color-secondary);
   transition-delay: 0.15s;
+  border: 0.1rem solid var(--color-secondary);
 }
 
 /*frequently asked questions*/
@@ -747,19 +779,28 @@ a {
   margin-bottom: 1rem;
   text-align: start;
 }
-.footer-up .quicklinks p,
-.locations p,
-.contact-us p {
+.footer-up p {
   text-align: start;
   color: var(--color-grey-1);
+  cursor: pointer;
+  margin-bottom: 0.5rem;
+}
+.footer-up p:hover {
+  transform: translateX(2rem);
 }
 .footer-up .follow-us ul {
   color: var(--color-grey-1);
   text-align: start;
+  cursor: pointer;
+  margin-bottom: 0.5rem;
+  margin-right: 11rem;
 }
 .footer-up .follow-us ul a {
   font-size: 1.1rem;
   color: var(--color-grey-1);
+}
+.footer-up .follow-us ul:hover {
+  transform: translateX(2rem);
 }
 
 /*footer-down*/
