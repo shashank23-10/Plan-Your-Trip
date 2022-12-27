@@ -74,6 +74,7 @@ questions.forEach(function (question) {
     question.classList.toggle("show-text");
   });
 });
+
 //Scroll-Bar
 let progress = document.getElementById("progress-bar");
 let totalHeight = document.body.scrollHeight - window.innerHeight;
@@ -82,3 +83,12 @@ window.onscroll = function () {
   progress.style.height = progressHeight + "%";
 };
 //Scroll-Bar
+
+//Scroll-for-explore-link
+const scrollTopBtn = document.querySelector(".link-explore");
+scrollTopBtn.addEventListener("click", function () {
+  scrollElement.scrollTop -= 250;
+});
+scrollElement.addEventListener("scroll", () => {
+  outputDiv.innerHTML = `scrollTop: ${Math.ceil(scrollElement.scrollTop)}`;
+});

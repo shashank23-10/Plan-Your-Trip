@@ -32,25 +32,14 @@
     <div class="top-bar">
       <img class="logo" src="img/plan_your_trip_logo-removebg-preview.png" />
       <a class="link-home" href="index.html" target="blank">Plan Your Trip</a>
-      <form>
-        <select>
-          <option>Locations</option>
-          <optgroup label="Asia">
-            <option>Japan</option>
-            <option>South Korea</option>
-            <option>Thailand</option>
-            <option>Indonesia</option>
-          </optgroup>
-          <optgroup label="North America">
-            <option>Canada</option>
-            <option">Mexico</option>
-          </optgroup>
-        </select>
-      </form>
+      <a class="links" href="#book" target="blank">Book</a>
+      <a class="links" href="#explore" target="blank">Explore</a>
+      <a class="links" href="#popular" target="blank">Popular</a>
+      <a class="links" href="#themes" target="blank">Themes</a>
+      <a class="links" href="#review" target="blank">Reviews</a>
+      <a class="links" href="#faqs" target="blank">FAQs</a>
       <a class="links" href="plans.html" target="blank">Plans</a>
       <a class="links" href="contact.html" target="blank">Contact</a>
-      <a class="links" href="" target="blank">Login</a>
-      <button class="signup"><a>Sign Up</a></button>
     </div>
     <!-- Slideshow container -->
     <div class="slideshow-container">
@@ -86,7 +75,7 @@
     <div class="dark-mode-button">
         <button class="btn"><i class="fa-solid fa-moon"></i></button>
     </div>
-    <div class="search-bar">
+    <div class="search-bar" id="book">
       <div class="heading">
         <h2>Customize & Book</h2>
         <h1>Amazing Holiday Packages</h1>
@@ -119,7 +108,7 @@
       </div>
       <button class="submit"><h3>Submit</h3></button>    
     </div>
-    <div class="explore">
+    <div class="explore" id="explore">
       <div class="heading">
         <h2>Explore Best Selling Packages for</h2>
       </div>
@@ -179,7 +168,7 @@
         </div>
       </div>
     </div>
-    <div class="high-demand">
+    <div class="high-demand" id="popular">
       <h1>Most Popular Destinations</h1>
       <div class="row1">
         <div class="col1">
@@ -218,7 +207,7 @@
         </div>
       </div>
     </div>
-    <div class="themes">
+    <div class="themes" id="themes">
       <h1>Explore by theme</h1>
       <div class="row1">
         <div class="col1">
@@ -298,7 +287,7 @@
         </div>
       </div>
     </div>
-    <section class="rev">    
+    <section class="rev" id="review">    
       <div class="reviews">
       <h1>Reviews</h1>
       <div class="container">
@@ -422,7 +411,7 @@
       <div id="prev" class="fas fa-chevron-left" onclick="prev()"></div>
       </div> 
     </section>
-    <section class="faq">
+    <section class="faq" id="faqs">
       <h1>Frequently Asked Questions</h1>
       <div class="section-center">
         <article class="question">

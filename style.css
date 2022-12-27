@@ -37,6 +37,11 @@
   --color-grey-6: #12181b;
 }
 
+/*Editing within HTML FILE*/
+html {
+  scroll-behavior: smooth;
+}
+
 /*Scroll-Bar Animation*/
 ::-webkit-scrollbar {
   width: 0;
@@ -80,7 +85,7 @@ a {
 }
 .top-bar .link-home {
   margin-top: 1rem;
-  padding-right: 22rem;
+  margin-right: 9rem;
   font-size: 1.5rem;
   color: var(--color-secondary);
   font-family: "Playfair Display", serif;
@@ -88,19 +93,10 @@ a {
 .top-bar .logo {
   height: 3.5rem;
 }
-.top-bar select {
-  margin-top: 1rem;
-  padding: 0.1rem;
-  border-radius: 1rem;
-  font-size: 1.2rem;
-  color: var(--color-secondary);
-  cursor: pointer;
-  background-color: aliceblue;
-}
 .top-bar .links {
   margin-top: 1rem;
   color: var(--color-secondary);
-  padding-left: 2rem;
+  padding-left: 1.5rem;
   font-size: 1.5rem;
 }
 .top-bar .signup {
@@ -224,7 +220,7 @@ a {
 
 /*SEARCH*/
 .search-bar {
-  padding: 1rem;
+  padding: 5rem 0rem 0rem 0rem;
   background-color: var(--color-primary);
   text-align: center;
 }
@@ -263,8 +259,7 @@ a {
 }
 /*content-section*/
 .content-section {
-  padding: 1rem;
-  padding-top: -1rem;
+  padding-top: 5rem;
   background-color: var(--color-primary);
 }
 .content-section .heading {
@@ -273,7 +268,6 @@ a {
   color: var(--color-secondary);
 }
 .content-section .benefits {
-  padding-top: 2rem;
   font-size: large;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -297,7 +291,7 @@ a {
 /*Explore Packages*/
 .explore {
   background-color: var(--color-primary);
-  padding: 1.5rem;
+  padding: 5rem 5rem 0rem 5rem;
 }
 .explore .heading {
   font-size: 1rem;
@@ -335,7 +329,7 @@ a {
 
 .high-demand {
   background-color: var(--color-primary);
-  padding: 1.5rem;
+  padding: 5rem 5rem 0rem 5rem;
   text-align: center;
 }
 
@@ -375,7 +369,7 @@ a {
 /*THENES*/
 .themes {
   background-color: var(--color-primary);
-  padding: 1.5rem;
+  padding: 5rem 5rem 0rem 5rem;
   text-align: center;
 }
 
@@ -412,7 +406,7 @@ a {
 
 .reviews {
   background-color: var(--color-primary);
-  padding: 1rem;
+  padding: 5rem 5rem 0rem 5rem;
   text-align: center;
 }
 .reviews h1 {
@@ -496,7 +490,6 @@ a {
 .reviews #next,
 .reviews #prev {
   position: absolute;
-  z-index: 2;
   transform: translateY(-50%);
   margin-top: -8.5rem;
   height: 3.125rem;
@@ -524,7 +517,7 @@ a {
 /*Newsletter*/
 .newsletter {
   background-color: var(--color-primary);
-  padding: 1.5rem;
+  padding: 5rem 5rem 0rem 5rem;
   text-align: center;
 }
 .newsletter h1 {
@@ -555,7 +548,7 @@ a {
 /*frequently asked questions*/
 .faq{
   background-color: var(--color-primary);
-  padding-top: 1rem;
+  padding: 5rem 5rem 0rem 5rem;
   margin-bottom: -2rem;
 }
 .faq h1{
