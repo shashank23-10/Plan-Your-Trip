@@ -665,6 +665,65 @@ a {
   text-align: center;
 }
 
+
+/*------------------------------------------CONTACT PAGE------------------------------------------*/
+.contact-container .contact-heading{
+  padding: 1rem;
+  background-color: var(--color-primary);
+  text-align: center;
+}
+.contact-container .contact-heading h5{
+  font-size: 1.8rem;
+  color: var(--color-secondary);
+}
+.contact-container .contact-heading h2{
+  color: var(--color-secondary);
+  font-size: 3.6rem;
+}
+.contact-container .row{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  padding: 2rem;
+  background-color: var(--color-primary);
+}
+.contact-container .row .col-1,
+.col-2 {
+  border: var(--color-secondary);
+  border-radius: 0.125rem;
+  border-style: solid;
+  padding: 3rem;
+  box-shadow: 0 0.1875rem 0.9375rem var(--color-grey-1);
+  margin: 1rem;
+}
+.contact-container .row .col-1 .form-group{
+  display: flex;
+  margin-bottom: 1rem;
+}
+.contact-container .row .col-1 .form-group .label{
+  display: flex;
+}
+.contact-container .row .col-2{
+  text-align: center;
+}
+.contact-container .row .col-2 h5{
+  color: var(--color-grey-1);
+  font-size: 2rem;
+  padding-bottom: 1rem ;
+}
+.contact-container .row .col-2 p{
+  color: var(--color-grey-2);
+  font-size: 1rem;
+  padding-top: 1rem;
+}
+.contact-container .row .col-2 img{
+  width: 28rem;
+  border: var(--color-secondary);
+  border-radius: 0.125rem;
+  border-style: solid;
+  height: 18rem;
+}
+
 /*-------------------------------------------------------RESPONSIVE CODE-----------------------------------------------------------*/
 @media (max-width: 998px) {
 }
