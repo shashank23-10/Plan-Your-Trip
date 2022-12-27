@@ -41,7 +41,7 @@ html {
   scroll-behavior: smooth;
 }
 
-/*Scroll-Bar Animation*/
+/*----------------------------------------Scroll-Bar Animation---------------------------------------*/
 ::-webkit-scrollbar {
   width: 0;
 }
@@ -73,7 +73,7 @@ html {
 a {
   text-decoration: none;
 }
-/*Top Bar*/
+/*--------------------------------------------Top Bar--------------------------------------------------*/
 .top-bar {
   display: flex;
   background-color: var(--color-primary);
@@ -120,7 +120,7 @@ a {
   color: var(--color-secondary);
 }
 
-/* Slideshow container */
+/*-------------------------------------- Slideshow container------------------------------------------*/
 .slideshow-container {
   max-width: 100%;
   align-items: center;
@@ -173,11 +173,9 @@ a {
   z-index: -1;
   margin-bottom: -1.4rem;
 }
-/* Hide the images by default */
 .mySlides {
   display: none;
 }
-/* Next & previous buttons */
 .prev,
 .next {
   cursor: pointer;
@@ -193,7 +191,6 @@ a {
   border-radius: 0 0.1875rem 0.1875rem 0;
   user-select: none;
 }
-/* Position the "next button" to the right */
 .prev {
   left: 0;
   border-radius: 0.1875rem 0 0 0.1875rem;
@@ -202,12 +199,10 @@ a {
   right: 0;
   border-radius: 0.1875rem 0 0 0.1875rem;
 }
-/* On hover, add a black background color with a little bit see-through */
 .prev:hover,
 .next:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
-/* The dots/bullets/indicators */
 .dot {
   cursor: pointer;
   height: 0.9375rem;
@@ -222,7 +217,6 @@ a {
 .dot:hover {
   background-color: #717171;
 }
-/* Fading animation */
 .fade {
   animation-name: fade;
   animation-duration: 1.5s;
@@ -236,7 +230,7 @@ a {
   }
 }
 
-/*DARK MODE BUTTON*/
+/*-------------------------------------------DARK MODE BUTTON------------------------------------*/
 .dark-mode-button {
   position: fixed;
   top: 88%;
@@ -270,7 +264,7 @@ a {
   pointer-events: none;
 }
 
-/*SEARCH*/
+/*-----------------------------------------------SEARCH-----------------------------------------*/
 .search-bar {
   padding: 5rem 0rem 0rem 0rem;
   background-color: var(--color-primary);
@@ -316,7 +310,7 @@ a {
   transition-delay: 0.15s;
   border: 0.1rem solid var(--color-secondary);
 }
-/*content-section*/
+/*------------------------------------------benefits-section---------------------------------------*/
 .content-section {
   padding-top: 5rem;
   background-color: var(--color-primary);
@@ -377,7 +371,7 @@ a {
   color: var(--color-grey-2);
 }
 
-/*Explore Packages*/
+/*--------------------------------------------Explore Packages---------------------------------------*/
 .explore {
   background-color: var(--color-primary);
   padding: 5rem 5rem 0rem 5rem;
@@ -431,13 +425,12 @@ a {
   transition-delay: 0.15s;
   border: 0.1rem solid var(--color-secondary);
 }
-/*high-demand*/
+/*---------------------------------------------high-demand-------------------------------------------*/
 .high-demand {
   background-color: var(--color-primary);
   padding: 5rem 5rem 0rem 5rem;
   text-align: center;
 }
-
 .high-demand .row1,
 .row2 {
   display: grid;
@@ -445,7 +438,6 @@ a {
   padding-top: 1rem;
   padding-left: 1rem;
 }
-
 .high-demand img {
   width: 14rem;
   height: 9rem;
@@ -453,7 +445,6 @@ a {
   transition: all 0.4s ease-in-out;
   filter: brightness(1);
 }
-
 .high-demand img:hover {
   width: 14.5rem;
   height: 9.5rem;
@@ -465,6 +456,7 @@ a {
 
 .high-demand h1 {
   color: var(--color-secondary);
+  font-size: 2.5rem;
 }
 
 .high-demand h3 {
@@ -489,13 +481,12 @@ a {
   border: 0.1rem solid var(--color-secondary);
   transition-delay: 0.15s;
 }
-/*THEMES*/
+/*-------------------------------------------------THEMES---------------------------------------------*/
 .themes {
   background-color: var(--color-primary);
   padding: 5rem 5rem 0rem 5rem;
   text-align: center;
 }
-
 .themes .row1 {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -519,6 +510,7 @@ a {
 }
 .themes h1 {
   color: var(--color-secondary);
+  font-size: 2.5rem;
 }
 .themes h3 {
   color: var(--color-grey-1);
@@ -540,8 +532,7 @@ a {
   border: 0.1rem solid var(--color-secondary);
 }
 
-/*Reviews*/
-
+/*-------------------------------------------------Reviews----------------------------------------------*/
 .reviews {
   background-color: var(--color-primary);
   padding: 5rem 5rem 0rem 5rem;
@@ -652,13 +643,14 @@ a {
   background: var(--color-primary);
   color: var(--color-secondary);
 }
-/*Newsletter*/
+/*------------------------------------Newsletter-------------------------------------------------*/
 .newsletter {
   background-color: var(--color-primary);
   padding: 5rem 5rem 0rem 5rem;
   text-align: center;
 }
 .newsletter h1 {
+  font-size: 2.5rem;
   color: var(--color-secondary);
 }
 .newsletter h3 {
@@ -687,7 +679,7 @@ a {
   border: 0.1rem solid var(--color-secondary);
 }
 
-/*frequently asked questions*/
+/*------------------------------frequently asked questions-----------------------------------------*/
 .faq {
   background-color: var(--color-primary);
   padding: 5rem 5rem 0rem 5rem;
@@ -719,7 +711,6 @@ a {
   text-transform: capitalize;
   padding-bottom: 1rem;
 }
-
 .question-title p {
   margin-bottom: 0;
   letter-spacing: var(--spacing);
@@ -762,7 +753,7 @@ a {
   display: none;
 }
 
-/*footer-up*/
+/*-----------------------------------------footer-up---------------------------------------------*/
 .footer-up {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -803,7 +794,7 @@ a {
   transform: translateX(2rem);
 }
 
-/*footer-down*/
+/*----------------------------------------footer-down--------------------------------------------*/
 .footer-down {
   text-align: center;
   background-color: var(--color-secondary);
@@ -981,32 +972,31 @@ a {
 }
 
 /*-------------------------------------------------------RESPONSIVE CODE-----------------------------------------------------------*/
-@media (max-width: 998px) {
-}
-@media (max-width: 768px) {
-}
 
 @media screen and (max-width: 1250px) {
   html {
     font-size: 100%;
   }
 }
-
 @media screen and (max-width: 960px) {
   html {
     font-size: 58%;
   }
 }
-
 @media screen and (max-width: 660px) {
   html {
     font-size: 44.5%;
   }
+  .top-bar .link-home {
+    margin-right: 14rem;
+  }
   .high-demand .row1,
   .high-demand .row2,
   .themes .row1,
-  .content-section .benefits {
-    font-size: 100%;
+  .content-section .benefits,
+  .faq,
+  .reviews {
+    font-size: 150%;
     grid-template-columns: repeat(4, 1fr);
   }
   .main-section {
@@ -1020,9 +1010,10 @@ a {
   .high-demand .row1,
   .high-demand .row2,
   .themes .row1,
-  .content-section .benefits {
-    font-size: 100%;
-    grid-template-columns: repeat(2, 1fr);
+  .content-section .benefits,
+  .faq {
+    font-size: 180%;
+    grid-template-columns: repeat(1, 1fr);
     padding-bottom: 1rem;
   }
   .main-section {
@@ -1032,9 +1023,93 @@ a {
     grid-template-columns: repeat(1, 1fr);
     margin: 0 15rem 0 15rem;
   }
+  .explore .contents .row1,
+  .row2 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .content-section .heading,
+  .faq h1,
+  .reviews h1 {
+    font-size: 280%;
+  }
+  .content-section .benefits h4 {
+    font-size: 150%;
+  }
+  .content-section .benefits p {
+    font-size: 150%;
+  }
+  .popular .high-demand h1,
+  .themes h1 {
+    font-size: 480%;
+  }
+  .popular .high-demand img,
+  .themes .col img,
+  .explore .contents .col img {
+    width: 42rem;
+    height: 27rem;
+  }
+  .popular .high-demand h3,
+  .themes h3,
+  .explore .contents h3 {
+    font-size: 250%;
+  }
+  .newsletter h1 {
+    font-size: 150%;
+  }
+  .newsletter {
+    font-size: 250%;
+  }
+  .faq p {
+    font-size: 180%;
+  }
+  .faq .section-center {
+    width: 55rem;
+    margin: 0 auto;
+    max-width: 90rem;
+  }
+  .reviews .container .slide-container .slide {
+    width: 55rem;
+  }
+  .reviews #next,
+  .reviews #prev {
+    margin-top: -9.5rem;
+  }
+  .reviews #next {
+    right: 8rem;
+  }
+  .reviews #prev {
+    left: 8rem;
+  }
+  .reviews .container .slide-container .slide .text {
+    font-size: 90%;
+  }
+  .popular .high-demand p,
+  .popular .high-demand button,
+  .themes .theme-places button,
+  .explore .contents p,
+  .explore .contents button {
+    font-size: 150%;
+  }
+  .popular .high-demand .col,
+  .themes .col,
+  .explore .contents .col {
+    padding-bottom: 1rem;
+  }
+  .popular .high-demand .row2 {
+    margin-top: -2rem;
+  }
+  .explore .contents .row2 {
+    margin-top: -1rem;
+  }
+  .explore .heading h2 {
+    font-size: 380%;
+  }
+  .explore {
+    text-align: center;
+  }
 }
 
-@media screen and (max-width: 440px) {
+/*@media screen and (max-width: 440px) {
   html {
     font-size: 28.5%;
   }
@@ -1048,11 +1123,4 @@ a {
   .main-section {
     grid-template-columns: repeat(1, 1fr);
   }
-}
-
-@media screen and (max-width: 1070px) {
-}
-@media screen and (max-width: 970px) {
-}
-@media screen and (max-width: 700px) {
-}
+}*/
