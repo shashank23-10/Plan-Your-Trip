@@ -23,28 +23,20 @@
     <title>Plan Your Trip</title>
   </head>
   <body>
+    <div id="progress-bar"></div>
+    <div id="scroll-path"></div>
     <div class="top-bar">
       <img class="logo" src="img/plan_your_trip_logo-removebg-preview.png" />
       <a class="link-home" href="index.html" target="blank">Plan Your Trip</a>
-      <form>
-        <select>
-          <option>Locations</option>
-          <optgroup label="Asia">
-            <option>Japan</option>
-            <option>South Korea</option>
-            <option>Thailand</option>
-            <option>Indonesia</option>
-          </optgroup>
-          <optgroup label="North America">
-            <option>Canada</option>
-            <option">Mexico</option>
-          </optgroup>
-        </select>
-      </form>
+      <a class="links" href="index.html#book" href="#book" target="blank">Book</a>
+      <a class="links" href="index.html#explore" target="blank">Explore</a>
+      <a class="links" href="index.html#popular" target="blank">Popular</a>
+      <a class="links" href="index.html#themes" target="blank">Themes</a>
+      <a class="links" href="index.html#benefits" target="blank">Benefits</a>
+      <a class="links" href="index.html#review" target="blank">Reviews</a>
+      <a class="links" href="index.html#faqs" target="blank">FAQs</a>
       <a class="links" href="plans.html" target="blank">Plans</a>
       <a class="links" href="contact.html" target="blank">Contact</a>
-      <a class="links" href="" target="blank">Login</a>
-      <button class="signup"><a>Sign Up</a></button>
     </div>
     <div class="plans-heading">
       <div class="heading">
@@ -161,10 +153,11 @@
     <script>
       (function () {
         document.querySelector(".dark-mode-button").addEventListener("click", () => {
-          document.body.classList.toggle("dark-mode");
+          document.body.classList.toggle("light-mode");
         });
       })();
     </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   </body>
 </html>
 

@@ -31,7 +31,7 @@ function showSlides(n) {
 //Dark Mode Implementation
 (function () {
   document.querySelector(".dark-mode-button").addEventListener("click", () => {
-    document.body.classList.toggle("dark-mode");
+    document.body.classList.toggle("light-mode");
   });
 })();
 //Dark Mode Implementation Ends
@@ -91,4 +91,23 @@ scrollTopBtn.addEventListener("click", function () {
 });
 scrollElement.addEventListener("scroll", () => {
   outputDiv.innerHTML = `scrollTop: ${Math.ceil(scrollElement.scrollTop)}`;
+});
+
+//scroll-smmooth-fromW3schools
+$(document).ready(function () {
+  $("a").on("click", function (event) {
+    if (this.hash !== "") {
+      event.preventDefault();
+      var hash = this.hash;
+      $("html, body").animate(
+        {
+          scrollTop: $(hash).offset().top,
+        },
+        800,
+        function () {
+          window.location.hash = hash;
+        }
+      );
+    }
+  });
 });
