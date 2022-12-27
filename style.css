@@ -115,13 +115,51 @@ a {
 /* Slideshow container */
 .slideshow-container {
   max-width: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
   position: relative;
   margin-bottom: -1.3rem;
+  display: flex;
+  z-index: 0;
+  margin-bottom: 8.6rem;
+}
+.slideshow-container .content{
+  text-align: center;
+  margin-left: -25rem;
+}
+.slideshow-container .content h3{
+  padding-top: 9.5rem;
+  font-size: 2.8rem;
+  text-transform: uppercase;
+  text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.1);
+  color: #fff;
+}
+.slideshow-container .content p {
+  font-size: 1.6rem;
+  color: #fff;
+  padding: 0.5rem 0;
+}
+.slideshow-container .content .btn{
+  display: inline-block;
+  margin-top: 1rem;
+  background: var(--color-secondary);
+  color: #fff;
+  padding: 0.8rem 3rem;
+  border: 0.2rem solid var(--color-primary);
+  cursor: pointer;
+  font-size: 1.7rem;
+}
+.slideshow-container .content .btn:hover {
+  background: transparent;
+  color: #fff;
 }
 .slideshow-container img {
-  height: 25rem;
+  height: 32rem;
   width: 100%;
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
   z-index: -1;
   margin-bottom: -1.4rem;
 }
@@ -136,7 +174,7 @@ a {
   position: absolute;
   top: 50%;
   width: auto;
-  margin-top: -1.375rem;
+  margin-top: 5.5rem;
   padding: 1rem;
   color: white;
   font-weight: bold;
@@ -146,6 +184,10 @@ a {
   user-select: none;
 }
 /* Position the "next button" to the right */
+.prev {
+  left: 0;
+  border-radius: 0.1875rem 0 0 0.1875rem;
+}
 .next {
   right: 0;
   border-radius: 0.1875rem 0 0 0.1875rem;
@@ -254,8 +296,8 @@ a {
   cursor: pointer;
 }
 .search-bar .submit:hover {
-  background-color: var(--color-hover);
-  color: var(--color-primary);
+  background-color: transparent;
+  color:  var(--color-secondary);;
 }
 /*content-section*/
 .content-section {
@@ -268,6 +310,7 @@ a {
   color: var(--color-secondary);
 }
 .content-section .benefits {
+  padding-top: 2.5rem;
   font-size: large;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -542,7 +585,8 @@ a {
   border-radius: 10rem;
 }
 .newsletter .details .submit:hover {
-  background-color: var(--color-hover);
+  background-color: transparent;
+  color: var(--color-secondary);
 }
 
 /*frequently asked questions*/
@@ -627,20 +671,25 @@ a {
   background-color: var(--color-primary);
   padding: 1.5rem;
   padding-top: 3rem;
+  padding-left: 5.5rem;
 }
 .footer-up .quicklinks h2,
 .locations h2,
 .contact-us h2,
 .follow-us h2 {
   color: var(--color-secondary);
+  margin-bottom: 1rem;
+  text-align: start;
 }
 .footer-up .quicklinks p,
 .locations p,
 .contact-us p {
+  text-align: start;
   color: var(--color-grey-1);
 }
 .footer-up .follow-us ul {
   color: var(--color-grey-1);
+  text-align: start;
 }
 .footer-up .follow-us ul a {
   font-size: 1.1rem;
