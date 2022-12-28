@@ -803,7 +803,7 @@ a {
 
 /*------------------------------------------PLANS PAGE------------------------------------------*/
 .plans-heading {
-  padding-top: 1rem;
+  padding-top: 5rem;
   text-align: center;
   background-color: var(--color-primary);
 }
@@ -902,6 +902,24 @@ a {
   html {
     font-size: 44.5%;
   }
+  ::-webkit-scrollbar {
+    width: 0;
+  }
+  #scroll-path {
+    position: fixed;
+    top: 10%;
+    right: 0;
+    width: 0.5rem;
+    background: var(--color-primary);
+  }
+  #progress-bar {
+    position: fixed;
+    top: 10%;
+    right: 0;
+    width: 0.5rem;
+    background: var(--color-secondary);
+    animation: animate 5s linear;
+  }
   .top-bar .link-home {
     margin-right: 18rem;
   }
@@ -921,6 +939,24 @@ a {
 @media screen and (max-width: 545px) {
   html {
     font-size: 34.5%;
+  }
+  ::-webkit-scrollbar {
+    width: 0;
+  }
+  #scroll-path {
+    position: fixed;
+    top: 10%;
+    right: 0;
+    width: 0.5rem;
+    background: var(--color-primary);
+  }
+  #progress-bar {
+    position: fixed;
+    top: 10%;
+    right: 0;
+    width: 0.5rem;
+    background: var(--color-secondary);
+    animation: animate 5s linear;
   }
   .high-demand .row1,
   .high-demand .row2,
